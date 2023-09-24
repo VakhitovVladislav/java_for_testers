@@ -5,23 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="317082f1-4f19-464b-9d0a-6bb1c7e522aa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sandbox/sandbox/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sandbox/sandbox/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/build/classes/java/main/Geometry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/build/classes/java/main/Hello.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/build/classes/java/main/Hello.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/build/classes/java/main/ru/stqa/geometry/figures/Rectange.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/build/classes/java/main/ru/stqa/geometry/figures/Rectange.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/build/classes/java/main/ru/stqa/geometry/figures/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/build/classes/java/main/ru/stqa/geometry/figures/Square.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sandbox/sandbox/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/Hello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/ru/stqa/geometry/Geometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/ru/stqa/geometry/Geometry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/ru/stqa/geometry/figures/Rectange.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/ru/stqa/geometry/figures/Rectange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/ru/stqa/geometry/figures/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/ru/stqa/geometry/figures/Square.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,28 +71,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;zulu-17&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "zulu-17",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
-  <component name="RunManager" selected="Gradle.TriangleTests">
+}]]></component>
+  <component name="RunManager" selected="JUnit.MathTests">
     <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Hello" />
-      <module name="sandbox.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ru.stqa.geometry.Geometry" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.Geometry" />
       <module name="sandbox.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,12 +137,27 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="MathTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MathTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Hello" />
+      <item itemvalue="Gradle.SquareTests (1)" />
+      <item itemvalue="Gradle.TriangleTests" />
+      <item itemvalue="JUnit.MathTests" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MathTests" />
+        <item itemvalue="Application.Hello" />
         <item itemvalue="Gradle.TriangleTests" />
         <item itemvalue="Gradle.SquareTests (1)" />
-        <item itemvalue="Application.ru.stqa.geometry.Geometry" />
-        <item itemvalue="Application.Hello" />
       </list>
     </recent_temporary>
   </component>
@@ -177,5 +182,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

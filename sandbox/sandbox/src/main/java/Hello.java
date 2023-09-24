@@ -1,11 +1,21 @@
-import java.io.File;
-
 public class Hello {
     public static void main(String[] args) {
-        System.out.println("Hello world");
-
-        var configFile = new File("sandbox/sandbox/build.gradle");
-        System.out.println(configFile.getAbsolutePath());
-        System.out.println(configFile.exists());
+        try {
+            int z = calculate();
+            System.out.println(z);
+            System.out.println("Hello world");
+        }catch (ArithmeticException exception){
+            System.out.println(exception.getMessage());
+        }
+    }
+    private static int calculate() {
+        int x = 1;
+        int y =1;
+        int z = divide(x, y);
+        return z;
+    }
+    private static int divide(int x, int y) {
+        int z = x / y;
+        return z;
     }
 }
