@@ -1,6 +1,4 @@
 package ru.stqa.geometry;
-import ru.stqa.geometry.figures.Rectange;
-import ru.stqa.geometry.figures.Square;
 
 
 public class Geometry {

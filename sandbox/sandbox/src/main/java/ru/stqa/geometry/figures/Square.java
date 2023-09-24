@@ -2,6 +2,12 @@ package ru.stqa.geometry.figures;
 
 public record Square(double side) {
 
+    public Square{
+        if (side < 0){
+            throw  new IllegalArgumentException("Squre side should be non-negative");
+        }
+    }
+
     public static void pritSquareArea(Square square) {
         String text = String.format("Площадь квадрата со стороной %f = %f", square.side, square.area());
         System.out.println(text);

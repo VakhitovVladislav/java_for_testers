@@ -5,20 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="317082f1-4f19-464b-9d0a-6bb1c7e522aa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/build/classes/java/main/Hello.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/build/classes/java/main/Hello.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/build/classes/java/main/ru/stqa/geometry/figures/Rectange.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/build/classes/java/main/ru/stqa/geometry/figures/Rectange.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/build/classes/java/main/ru/stqa/geometry/figures/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/build/classes/java/main/ru/stqa/geometry/figures/Square.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/out/production/classes/Hello.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/out/production/classes/Hello.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/out/production/classes/ru/stqa/geometry/Geometry.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/out/production/classes/ru/stqa/geometry/Geometry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/out/production/classes/ru/stqa/geometry/figures/Rectange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/out/production/classes/ru/stqa/geometry/figures/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/out/production/classes/ru/stqa/geometry/figures/Square.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/out/production/classes/ru/stqa/geometry/figures/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/out/production/classes/ru/stqa/geometry/figures/Triangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/out/test/classes/MathTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/out/test/classes/MathTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/out/test/classes/ru/stqa/geometry/figures/SquareTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/out/test/classes/ru/stqa/geometry/figures/SquareTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/out/test/classes/ru/stqa/geometry/figures/TriangleTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/out/test/classes/ru/stqa/geometry/figures/TriangleTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/Hello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/ru/stqa/geometry/Geometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/ru/stqa/geometry/Geometry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/ru/stqa/geometry/figures/Rectange.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/ru/stqa/geometry/figures/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/ru/stqa/geometry/figures/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/ru/stqa/geometry/figures/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/ru/stqa/geometry/figures/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/ru/stqa/geometry/figures/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/src/test/java/MathTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/src/test/java/MathTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/src/test/java/ru/stqa/geometry/figures/SquareTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/src/test/java/ru/stqa/geometry/figures/SquareTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/src/test/java/ru/stqa/geometry/figures/TriangleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/src/test/java/ru/stqa/geometry/figures/TriangleTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,81 +86,100 @@
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.MathTests">
-    <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Hello" />
-      <module name="sandbox.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SquareTests (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox/sandbox" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stqa.geometry.figures.SquareTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="TriangleTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox/sandbox" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stqa.geometry.figures.TriangleTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="MathTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TriangleTests.cannotCreateTriangleWithNegativeSide">
+    <configuration name="RectangleTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sandbox.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MathTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.geometry.figures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.RectangleTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RectangleTests.cannotCreateRectangleWithNegativeSide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.geometry.figures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.RectangleTests" />
+      <option name="METHOD_NAME" value="cannotCreateRectangleWithNegativeSide" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SquareTests.cannotCreateSquareWhithNegativeSide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.geometry.figures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.SquareTests" />
+      <option name="METHOD_NAME" value="cannotCreateSquareWhithNegativeSide" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SquareTests.cannotCreateSquareWithNegativeSide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.geometry.figures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.SquareTests" />
+      <option name="METHOD_NAME" value="cannotCreateSquareWithNegativeSide" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TriangleTests.cannotCreateTriangleWithNegativeSide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.geometry.figures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.TriangleTests" />
+      <option name="METHOD_NAME" value="cannotCreateTriangleWithNegativeSide" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.Hello" />
-      <item itemvalue="Gradle.SquareTests (1)" />
-      <item itemvalue="Gradle.TriangleTests" />
-      <item itemvalue="JUnit.MathTests" />
+      <item itemvalue="JUnit.RectangleTests" />
+      <item itemvalue="JUnit.RectangleTests.cannotCreateRectangleWithNegativeSide" />
+      <item itemvalue="JUnit.SquareTests.cannotCreateSquareWhithNegativeSide" />
+      <item itemvalue="JUnit.SquareTests.cannotCreateSquareWithNegativeSide" />
+      <item itemvalue="JUnit.TriangleTests.cannotCreateTriangleWithNegativeSide" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MathTests" />
-        <item itemvalue="Application.Hello" />
-        <item itemvalue="Gradle.TriangleTests" />
-        <item itemvalue="Gradle.SquareTests (1)" />
+        <item itemvalue="JUnit.TriangleTests.cannotCreateTriangleWithNegativeSide" />
+        <item itemvalue="JUnit.RectangleTests.cannotCreateRectangleWithNegativeSide" />
+        <item itemvalue="JUnit.SquareTests.cannotCreateSquareWithNegativeSide" />
+        <item itemvalue="JUnit.RectangleTests" />
+        <item itemvalue="JUnit.SquareTests.cannotCreateSquareWhithNegativeSide" />
       </list>
     </recent_temporary>
   </component>

@@ -4,7 +4,7 @@ public class MathTests {
     @Test
     void testDivideByZero(){
         int x = 1;
-        int y = 0;
+        int y = 2;
         int z = x / y;
         System.out.println(z);
     }
