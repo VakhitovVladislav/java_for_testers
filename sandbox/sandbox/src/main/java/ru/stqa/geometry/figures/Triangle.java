@@ -2,12 +2,15 @@ package ru.stqa.geometry.figures;
 
 public record Triangle(double legOne, double legTwo, double hypotenuse) {
     public Triangle {
-        if ((legOne < 0 || legTwo < 0 || hypotenuse < 0) || (legOne + legTwo < hypotenuse ||
-                legOne + hypotenuse < legTwo || legTwo + hypotenuse < legOne)) {
+        if ((legOne < 0 || legTwo < 0 || hypotenuse < 0)) {
             throw new IllegalArgumentException("Triangle side should be non-negative");
+        } else if (legOne + legTwo < hypotenuse ||
+                legOne + hypotenuse < legTwo || legTwo + hypotenuse < legOne) {
+            throw new IllegalArgumentException("Added triangle angle (the sum of any two sides must " +
+                    "be at least equal to the third side)");
         }
 
-}
+    }
     public double trianglePerimeter() {
         return this.legOne + this.legTwo + this.hypotenuse;
     }
