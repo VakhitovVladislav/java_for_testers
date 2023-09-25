@@ -27,4 +27,10 @@ public class SquareTests {
         }
 
     }
+    @Test
+    void testEquality(){
+        var s1 = new Square(5.0);
+        var s2 = new Square(5.0);
+        Assertions.assertTrue(s1.equals(s2));
+    }
 }

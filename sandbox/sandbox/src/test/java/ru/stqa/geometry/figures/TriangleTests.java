@@ -22,4 +22,11 @@ public class TriangleTests {
             //OK
         }
     }
+
+    @Test
+    void testEquality(){
+        var triangle = new Triangle(1.0, 2.0, 3.0);
+        var triangle1 = new Triangle(1.0, 3.0, 2.0);
+        Assertions.assertTrue(triangle.equals(triangle1));
+    }
 }
