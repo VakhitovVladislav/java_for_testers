@@ -21,6 +21,12 @@ public class TriangleTests {
         } catch (IllegalArgumentException exception) {
             //OK
         }
+        try {
+            new Triangle(21.0, 21.0, 2.0);
+            Assertions.fail();
+        }catch (IllegalArgumentException exception){
+
+        }
     }
 
     @Test

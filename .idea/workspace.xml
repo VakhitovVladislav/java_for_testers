@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="317082f1-4f19-464b-9d0a-6bb1c7e522aa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/out/production/classes/ru/stqa/geometry/figures/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/out/production/classes/ru/stqa/geometry/figures/Triangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/out/test/classes/ru/stqa/geometry/figures/SquareTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/out/test/classes/ru/stqa/geometry/figures/SquareTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/out/test/classes/ru/stqa/geometry/figures/TriangleTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/out/test/classes/ru/stqa/geometry/figures/TriangleTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/ru/stqa/geometry/figures/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/ru/stqa/geometry/figures/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/ru/stqa/geometry/figures/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/src/main/java/ru/stqa/geometry/figures/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/src/test/java/ru/stqa/geometry/figures/RectangleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/src/test/java/ru/stqa/geometry/figures/RectangleTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/sandbox/src/test/java/ru/stqa/geometry/figures/SquareTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/src/test/java/ru/stqa/geometry/figures/SquareTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sandbox/sandbox/src/test/java/ru/stqa/geometry/figures/TriangleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/src/test/java/ru/stqa/geometry/figures/TriangleTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +15,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/addressbook_web_tests">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/sandbox/sandbox">
       <ProjectState />
     </projectState>
@@ -72,76 +69,105 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;zulu-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Vlad/homework/java_for_testers&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TriangleTests.testEquality">
-    <configuration name="RectangleTests.testEquality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sandbox.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.geometry.figures.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.RectangleTests" />
-      <option name="METHOD_NAME" value="testEquality" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Gradle.GroupRemovalTests.canRemoveGroup">
+    <configuration name="GroupCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;GroupCreationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
-    <configuration name="RectangleTests.testEquality2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sandbox.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.geometry.figures.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.RectangleTests" />
-      <option name="METHOD_NAME" value="testEquality2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="GroupCreationTests.untitled" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;GroupCreationTests.untitled&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
-    <configuration name="SquareTests.testEquality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sandbox.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.geometry.figures.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.SquareTests" />
-      <option name="METHOD_NAME" value="testEquality" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="GroupRemovalTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;GroupRemovalTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
-    <configuration name="TriangleTests.cannotCreateTriangleWithNegativeSide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sandbox.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.geometry.figures.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.TriangleTests" />
-      <option name="METHOD_NAME" value="cannotCreateTriangleWithNegativeSide" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="GroupRemovalTests.canRemoveGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;GroupRemovalTests.canRemoveGroup&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="TriangleTests.testEquality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sandbox.test" />
@@ -160,19 +186,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.RectangleTests.testEquality" />
-      <item itemvalue="JUnit.RectangleTests.testEquality2" />
-      <item itemvalue="JUnit.SquareTests.testEquality" />
+      <item itemvalue="Gradle.GroupCreationTests" />
+      <item itemvalue="Gradle.GroupCreationTests.untitled" />
+      <item itemvalue="Gradle.GroupRemovalTests" />
+      <item itemvalue="Gradle.GroupRemovalTests.canRemoveGroup" />
       <item itemvalue="JUnit.TriangleTests.testEquality" />
-      <item itemvalue="JUnit.TriangleTests.cannotCreateTriangleWithNegativeSide" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GroupRemovalTests.canRemoveGroup" />
+        <item itemvalue="Gradle.GroupRemovalTests" />
+        <item itemvalue="Gradle.GroupCreationTests" />
+        <item itemvalue="Gradle.GroupCreationTests.untitled" />
         <item itemvalue="JUnit.TriangleTests.testEquality" />
-        <item itemvalue="JUnit.RectangleTests.testEquality" />
-        <item itemvalue="JUnit.RectangleTests.testEquality2" />
-        <item itemvalue="JUnit.SquareTests.testEquality" />
-        <item itemvalue="JUnit.TriangleTests.cannotCreateTriangleWithNegativeSide" />
       </list>
     </recent_temporary>
   </component>
