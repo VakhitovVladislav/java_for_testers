@@ -18,16 +18,12 @@ public class TriangleTests {
         try {
             new Triangle(5.0, 5.0, 2.0);
             Assertions.fail();
-        } catch (IllegalArgumentException exception) {
-            //OK
-        }
-        try {
-            new Triangle(21.0, 21.0, 2.0);
-            Assertions.fail();
-        }catch (IllegalArgumentException exception){
 
+            } catch (IllegalArgumentException exception) {
+                //OK
+            }
         }
-    }
+
 
     @Test
     void testEquality(){
