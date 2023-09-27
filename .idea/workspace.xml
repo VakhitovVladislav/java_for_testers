@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="317082f1-4f19-464b-9d0a-6bb1c7e522aa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sandbox/sandbox/src/test/java/ru/stqa/geometry/figures/TriangleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/sandbox/src/test/java/ru/stqa/geometry/figures/TriangleTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +74,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.GroupRemovalTests.canRemoveGroup">
+  <component name="RunManager" selected="JUnit.TriangleTests.cannotCreateTriangleWithNegativeSide">
     <configuration name="GroupCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -168,7 +167,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TriangleTests.testEquality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TriangleTests.cannotCreateTriangleWithNegativeSide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sandbox.test" />
       <extension name="coverage">
         <pattern>
@@ -178,7 +177,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
       <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.TriangleTests" />
-      <option name="METHOD_NAME" value="testEquality" />
+      <option name="METHOD_NAME" value="cannotCreateTriangleWithNegativeSide" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -189,15 +188,15 @@
       <item itemvalue="Gradle.GroupCreationTests.untitled" />
       <item itemvalue="Gradle.GroupRemovalTests" />
       <item itemvalue="Gradle.GroupRemovalTests.canRemoveGroup" />
-      <item itemvalue="JUnit.TriangleTests.testEquality" />
+      <item itemvalue="JUnit.TriangleTests.cannotCreateTriangleWithNegativeSide" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TriangleTests.cannotCreateTriangleWithNegativeSide" />
         <item itemvalue="Gradle.GroupRemovalTests.canRemoveGroup" />
         <item itemvalue="Gradle.GroupRemovalTests" />
         <item itemvalue="Gradle.GroupCreationTests" />
         <item itemvalue="Gradle.GroupCreationTests.untitled" />
-        <item itemvalue="JUnit.TriangleTests.testEquality" />
       </list>
     </recent_temporary>
   </component>
