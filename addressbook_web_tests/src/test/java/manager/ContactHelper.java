@@ -1,14 +1,14 @@
 package manager;
 
 import model.ContactData;
-import model.GroupData;
 import org.openqa.selenium.By;
 
-public class ContactHelper extends HelperBase{
+public class ContactHelper extends HelperBase {
 
-    public ContactHelper (ApplicationManager manager){
+    public ContactHelper(ApplicationManager manager) {
         super(manager);
     }
+
     private void fillContactForm(ContactData contact) {
         type(By.name("firstname"), contact.first_name());
         type(By.name("middlename"), contact.middle_name());
@@ -30,18 +30,22 @@ public class ContactHelper extends HelperBase{
         type(By.name("notes"), contact.notes());
 
     }
+
     public void createContact(ContactData contact) {
         initContactCreation();
         fillContactForm(contact);
         submitContactCreation();
         returnToHomePage();
     }
+
     public void removeContact() {
         returnToHomePage();
         selectContact();
         removeSelectedContact();
-        returnToHomePage();;
+        returnToHomePage();
+        ;
     }
+
     public void modifyContact(ContactData contact) {
         returnToHomePage();
         initContactModification();
@@ -49,23 +53,27 @@ public class ContactHelper extends HelperBase{
         submitContactModification();
         returnToHomePage();
     }
+
     private void initContactCreation() {
         click(By.linkText("add new"));
     }
 
-    private void initContactModification(){
+    private void initContactModification() {
         click(By.xpath("//img[@src='icons/pencil.png']"));
     }
 
-    private void submitContactModification(){
+    private void submitContactModification() {
         click(By.name("update"));
     }
+
     private void submitContactCreation() {
         click(By.name("submit"));
     }
+
     private void returnToHomePage() {
         click(By.linkText("home"));
     }
+
     private void selectContact() {
         click(By.name("selected[]"));
     }
@@ -74,8 +82,27 @@ public class ContactHelper extends HelperBase{
         returnToHomePage();
         return manager.isElementPresent(By.name("selected[]"));
     }
+
     private void removeSelectedContact() {
         click(By.xpath("//input[@type='button'][@value='Delete']"));
         manager.driver.switchTo().alert().accept();
+    }
+
+    public int getCount() {
+        returnToHomePage();
+        return manager.driver.findElements(By.name("selected[]")).size();
+    }
+
+    public void removeAllContacts() {
+        returnToHomePage();
+        selectAllContacts();
+        removeSelectedContact();
+    }
+
+    private void selectAllContacts() {
+        var checkboxes = manager.driver.findElements(By.name("selected[]"));
+        for (var checkbox : checkboxes) {
+            checkbox.click();
+        }
     }
 }

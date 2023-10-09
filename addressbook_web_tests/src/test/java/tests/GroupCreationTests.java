@@ -17,7 +17,6 @@ public class GroupCreationTests extends TestBase {
                 for (var footer : List.of("", "group footer")) {
                     result.add(new GroupData(name, header, footer));
                 }
-
             }
         }
         for (int i = 0; i < 5; i++) {
