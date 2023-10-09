@@ -15,19 +15,25 @@ public class GroupCreationTests extends TestBase {
         for (var name : List.of("", "group name")) {
             for (var header : List.of("", "group header")) {
                 for (var footer : List.of("", "group footer")) {
-                    result.add(new GroupData(name, header, footer));
+                    result.add(new GroupData()
+                            .withName(name)
+                            .withHeader(header)
+                            .withFooter(footer));
                 }
             }
         }
         for (int i = 0; i < 5; i++) {
-            result.add(new GroupData(randomSting(i * 10), randomSting(i * 10), randomSting(i * 10)));
+            result.add(new GroupData()
+                    .withName(randomSting(i * 10))
+                    .withHeader(randomSting(i * 10))
+                    .withFooter(randomSting(i * 10)));
         }
         return result;
     }
 
     public static List<GroupData> negativeGroupProvider() {
         return new ArrayList<GroupData>(List.of(
-                new GroupData("Group Name'", "", "")));
+                new GroupData("", "Group Name'", "", "")));
     }
 
     @ParameterizedTest
