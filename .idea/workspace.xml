@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="317082f1-4f19-464b-9d0a-6bb1c7e522aa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
@@ -13,13 +15,20 @@
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/GroupHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/GroupHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/GroupCreationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/GroupModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/GroupModificationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/GroupRemovalTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/GroupRemovalTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/addressbook_web_tests">
@@ -91,7 +100,7 @@
       <recent name="ApplicationManager" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ContactModificationTests">
+  <component name="RunManager" selected="Gradle.GroupCreationTests">
     <configuration name="ContactCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -115,7 +124,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ContactCreationTests.canCreationContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroupCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
@@ -128,7 +137,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.ContactCreationTests.canCreationContact&quot;" />
+            <option value="&quot;tests.GroupCreationTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -138,7 +147,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ContactModificationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroupCreationTests.canCreateGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
@@ -151,7 +160,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.ContactModificationTests&quot;" />
+            <option value="&quot;tests.GroupCreationTests.canCreateGroup&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -161,7 +170,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ContactModificationTests.canModifyContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroupCreationTests.canCreateMultipleGroups" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
@@ -174,7 +183,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.ContactModificationTests.canModifyContact&quot;" />
+            <option value="&quot;tests.GroupCreationTests.canCreateMultipleGroups&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -184,7 +193,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ContactRemovalTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroupRemovalTests.canRemoveAllGroupsAtOnce" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
@@ -197,7 +206,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.ContactRemovalTests&quot;" />
+            <option value="&quot;tests.GroupRemovalTests.canRemoveAllGroupsAtOnce&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -209,11 +218,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ContactModificationTests" />
-        <item itemvalue="Gradle.ContactRemovalTests" />
-        <item itemvalue="Gradle.ContactModificationTests.canModifyContact" />
+        <item itemvalue="Gradle.GroupCreationTests" />
+        <item itemvalue="Gradle.GroupRemovalTests.canRemoveAllGroupsAtOnce" />
+        <item itemvalue="Gradle.GroupCreationTests.canCreateMultipleGroups" />
+        <item itemvalue="Gradle.GroupCreationTests.canCreateGroup" />
         <item itemvalue="Gradle.ContactCreationTests" />
-        <item itemvalue="Gradle.ContactCreationTests.canCreationContact" />
       </list>
     </recent_temporary>
   </component>
