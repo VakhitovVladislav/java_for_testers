@@ -6,6 +6,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 
@@ -39,19 +40,32 @@ public class GroupCreationTests extends TestBase {
     @ParameterizedTest
     @MethodSource("groupProvider")
     public void canCreateMultipleGroups(GroupData group) {
-        int groupCount = app.groups().getCount();
+        var oldGroups = app.groups().getList();
         app.groups().createGroup(group);
-        int newGroupCount = app.groups().getCount();
-        Assertions.assertEquals(groupCount + 1, newGroupCount);
+        var newGroups = app.groups().getList();
+        var expectedGroups = new ArrayList<>(oldGroups);
+        expectedGroups.add(group.withId(newGroups.get(newGroups.size() - 1).id()).withHeader("").withFooter(""));
+        newGroups.sort(compareById());
+        expectedGroups.sort(compareById());
+        Assertions.assertEquals(newGroups, expectedGroups);
     }
 
     @ParameterizedTest
     @MethodSource("negativeGroupProvider")
     public void canNotCreateGroup(GroupData group) {
-        int groupCount = app.groups().getCount();
+        var oldGroups = app.groups().getList();
         app.groups().createGroup(group);
-        int newGroupCount = app.groups().getCount();
-        Assertions.assertEquals(groupCount, newGroupCount);
+        var newGroups = app.groups().getList();
+        var expectedGroups = new ArrayList<>(oldGroups);
+        newGroups.sort(compareById());
+        expectedGroups.sort(compareById());
+        Assertions.assertEquals(newGroups, expectedGroups);
+    }
+
+    private Comparator<GroupData> compareById() {
+        return (o1, o2) -> {
+            return Integer.compare(Integer.parseInt(o1.id()), Integer.parseInt(o2.id()));
+        };
     }
 
 }
