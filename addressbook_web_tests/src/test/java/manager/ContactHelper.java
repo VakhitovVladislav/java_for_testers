@@ -46,13 +46,12 @@ public class ContactHelper extends HelperBase {
         selectContact(contact);
         removeSelectedContact();
         returnToHomePage();
-        ;
+
     }
 
     public void modifyContact(ContactData contact ,ContactData modifiedContact) {
         returnToHomePage();
-        selectContact(contact);
-        initContactModification();
+        initContactModification(contact);
         fillContactForm(modifiedContact);
         submitContactModification();
         returnToHomePage();
@@ -62,8 +61,8 @@ public class ContactHelper extends HelperBase {
         click(By.linkText("add new"));
     }
 
-    private void initContactModification() {
-        click(By.xpath("//img[@src='icons/pencil.png']"));
+    private void initContactModification(ContactData contact) {
+        click(By.cssSelector(String.format("a[href=\"edit.php?id=%s\"] > img", contact.id())));
     }
 
     private void submitContactModification() {
