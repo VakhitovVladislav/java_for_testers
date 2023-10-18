@@ -15,9 +15,11 @@ public class ContactCreationTests extends TestBase {
         var result = new ArrayList<ContactData>();
         for (var first_name : List.of("", "first_name")) {
             for (var last_name : List.of("", "last_name")) {
+                for (var photo: List.of("", randomFile("src/test/resources/images")))
                 result.add(new ContactData()
                         .withName(first_name)
                         .withLastName(last_name)
+                        .withPhoto(photo)
                 );
             }
         }
@@ -26,7 +28,8 @@ public class ContactCreationTests extends TestBase {
         for (int x = 0; x < 5; x++) {
             result.add(new ContactData()
                     .withName(randomSting(x * 10))
-                    .withLastName(randomSting(x * 10)));
+                    .withLastName(randomSting(x * 10))
+                    .withPhoto(randomFile("src/test/resources/images")));
         }
         return result;
     }

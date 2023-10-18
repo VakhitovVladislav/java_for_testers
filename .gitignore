@@ -1,3 +1,4 @@
 /addressbook_web_tests/build
 /sandbox/build
 /.gradle
+/addressbook_web_tests/src/test/resources/images
