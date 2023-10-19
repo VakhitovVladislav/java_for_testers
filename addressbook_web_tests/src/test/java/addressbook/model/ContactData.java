@@ -1,4 +1,4 @@
-package model;
+package addressbook.model;
 
 public record ContactData(String id, String first_name, String middle_name, String last_name,
                           String nick_name, String title, String company, String address,

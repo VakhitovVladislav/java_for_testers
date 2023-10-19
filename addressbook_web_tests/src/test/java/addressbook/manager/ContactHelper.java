@@ -1,12 +1,13 @@
-package manager;
+package addressbook.manager;
 
-import model.ContactData;
+import addressbook.manager.ApplicationManager;
+import addressbook.model.ContactData;
 import org.openqa.selenium.By;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ContactHelper extends HelperBase {
+public class ContactHelper extends addressbook.manager.HelperBase {
 
     public ContactHelper(ApplicationManager manager) {
         super(manager);

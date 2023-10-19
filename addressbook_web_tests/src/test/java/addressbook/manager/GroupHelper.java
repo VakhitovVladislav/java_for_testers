@@ -1,6 +1,6 @@
-package manager;
+package addressbook.manager;
 
-import model.GroupData;
+import addressbook.model.GroupData;
 import org.openqa.selenium.By;
 
 import java.util.ArrayList;

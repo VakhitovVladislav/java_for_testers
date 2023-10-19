@@ -1,4 +1,4 @@
-package manager;
+package addressbook.manager;
 
 import org.openqa.selenium.By;
 

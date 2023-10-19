@@ -1,6 +1,6 @@
-package tests;
+package addressbook.tests;
 
-import manager.ApplicationManager;
+import addressbook.manager.ApplicationManager;
 import org.junit.jupiter.api.BeforeEach;
 
 import java.io.File;
@@ -17,15 +17,6 @@ public class TestBase {
             app = new ApplicationManager();
         }
         app.init(System.getProperty("browser", "chrome"));
-    }
-
-    public static String randomSting(int n) {
-        var rnd = new Random();
-        var result = "";
-        for (int i = 0; i < n; i++) {
-            result = result + (char) ('a' + rnd.nextInt(26));
-        }
-        return result;
     }
 
     public static String randomFile(String dir){

@@ -1,6 +1,6 @@
-package tests;
+package addressbook.tests;
 
-import model.GroupData;
+import addressbook.model.GroupData;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
