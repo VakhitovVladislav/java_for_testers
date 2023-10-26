@@ -2,7 +2,7 @@ package addressbook.tests;
 
 import addressbook.model.GroupData;
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLMapper;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -27,8 +27,8 @@ public class GroupCreationTests extends TestBase {
                 }
             }
         }*/
-        ObjectMapper mapper = new ObjectMapper();
-        var value = mapper.readValue(new File("groups.json"), new TypeReference<List<GroupData>>(){});
+        var  mapper = new YAMLMapper();
+        var value = mapper.readValue(new File("groups.yaml"), new TypeReference<List<GroupData>>(){});
         result.addAll(value);
         return result;
     }
@@ -41,6 +41,7 @@ public class GroupCreationTests extends TestBase {
     @ParameterizedTest
     @MethodSource("groupProvider")
     public void canCreateMultipleGroups(GroupData group) {
+        // TODO: 19.10.2023 need fix id. new Groups {166, 167,168} expectedGroups {166, 167, 167}
         var oldGroups = app.groups().getList();
         app.groups().createGroup(group);
         var newGroups = app.groups().getList();
