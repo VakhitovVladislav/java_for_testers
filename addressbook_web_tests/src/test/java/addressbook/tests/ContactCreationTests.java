@@ -60,8 +60,6 @@ public class ContactCreationTests extends TestBase {
 
     @ParameterizedTest
     @MethodSource("contactProvider")
-    // TODO: 19.10.2023 need fix photo NoSuchElementException: no such element: Unable to locate element:
-    //  {"method":"link text","selector":"home"}
     public void canCreateMultipleContacts(ContactData contact) {
         var oldContacts = app.contacts().getList();
         app.contacts().createContact(contact);
