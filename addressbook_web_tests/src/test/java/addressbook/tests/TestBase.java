@@ -1,6 +1,7 @@
 package addressbook.tests;
 
 import addressbook.manager.ApplicationManager;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 
 import java.io.File;
@@ -18,11 +19,16 @@ public class TestBase {
     public void setUp() throws IOException {
         if (app == null) {
             var properties = new Properties();
-            properties.load(new FileReader(System.getProperty("target", "lockal.properties")));
+            properties.load(new FileReader(System.getProperty("target", "local.properties")));
             app = new ApplicationManager();
             app.init(System.getProperty("browser", "chrome"), properties);
         }
 
+    }
+
+    @AfterEach
+    void checkDatabaseConsistency(){
+        app.jdbc().checkConsistency();
     }
 
     public static String randomFile(String dir){

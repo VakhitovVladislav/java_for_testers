@@ -20,6 +20,10 @@ public class ApplicationManager {
     private ContactHelper contacts;
     private Properties properties;
 
+    private JdbcHelper jdbc;
+
+    private HibernateHelper hbm;
+
     public void init(String browser, Properties properties) {
         this.properties = properties;
         if (driver == null) {
@@ -36,7 +40,6 @@ public class ApplicationManager {
             session().login(properties.getProperty("web.username"), properties.getProperty("web.password"));
         }
     }
-
     public GroupHelper groups(){
         if (groups == null){
             groups = new GroupHelper(this);
@@ -56,6 +59,19 @@ public class ApplicationManager {
             session = new LoginHelper(this);
         }
         return session;
+    }
+
+    public JdbcHelper jdbc(){
+        if (jdbc == null){
+            jdbc = new JdbcHelper(this);
+        }
+        return jdbc;
+    }
+    public HibernateHelper hbm(){
+        if (hbm == null){
+            hbm = new HibernateHelper(this);
+        }
+        return hbm;
     }
 
     protected boolean isElementPresent(By locator) {
