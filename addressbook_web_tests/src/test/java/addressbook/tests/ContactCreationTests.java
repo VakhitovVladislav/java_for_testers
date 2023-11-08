@@ -64,7 +64,9 @@ public class ContactCreationTests extends TestBase {
                 .withName(CommonFunctions.randomSting(10))
                 .withLastName(CommonFunctions.randomSting(20))
                 .withMiddleName(CommonFunctions.randomSting(30))
-                .withTitle(CommonFunctions.randomSting(40)));
+                .withTitle(CommonFunctions.randomSting(40))
+        );
+
     }
 
     @ParameterizedTest

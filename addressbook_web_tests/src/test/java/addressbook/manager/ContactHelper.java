@@ -20,7 +20,7 @@ public class ContactHelper extends addressbook.manager.HelperBase {
         type(By.name("lastname"), contact.last_name());
         type(By.name("nickname"), contact.nick_name());
         type(By.name("title"), contact.title());
-        attach(By.xpath("//input[@name=\"photo\"]"), contact.photo());
+        //attach(By.xpath("//input[@name=\"photo\"]"), contact.photo());
         type(By.name("company"), contact.company());
         type(By.name("address"), contact.address());
         type(By.name("home"), contact.home_phone());
