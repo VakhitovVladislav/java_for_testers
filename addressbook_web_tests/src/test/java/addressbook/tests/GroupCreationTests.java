@@ -1,12 +1,10 @@
 package addressbook.tests;
 
 import addressbook.common.CommonFunctions;
-import addressbook.model.ContactData;
 import addressbook.model.GroupData;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.dataformat.yaml.YAMLMapper;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
@@ -77,22 +75,4 @@ public class GroupCreationTests extends TestBase {
             return Integer.compare(Integer.parseInt(o1.id()), Integer.parseInt(o2.id()));
         };
     }
-    @Test
-    public void canCreateContactInGroup() {
-        var contact = new ContactData()
-                .withName(CommonFunctions.randomSting(10))
-                .withLastName(CommonFunctions.randomSting(10))
-                .withAddress(CommonFunctions.randomSting(10));
-
-        if (app.hbm().getGroupCount() == 0) {
-            app.hbm().createGroup(new GroupData("", "group name", "group header", "group footer"));
-        }
-        var group = app.hbm().getGroupList().get(0);
-
-        var oldRelated = app.hbm().getContactsInGroup(group);
-        app.contacts().createContact(contact, group);
-        var newRelated = app.hbm().getContactsInGroup(group);
-        Assertions.assertEquals(oldRelated.size() + 1, newRelated.size());
-    }
-
 }

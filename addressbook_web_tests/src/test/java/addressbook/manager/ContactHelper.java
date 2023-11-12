@@ -43,7 +43,6 @@ public class ContactHelper extends addressbook.manager.HelperBase {
         submitContactCreation();
         returnToHomePage();
     }
-
     public void createContact(ContactData contact, GroupData group) {
         initContactCreation();
         fillContactForm(contact);
@@ -51,9 +50,15 @@ public class ContactHelper extends addressbook.manager.HelperBase {
         submitContactCreation();
         returnToHomePage();
     }
+    public void addContactInGroup(ContactData contact, GroupData group) {
+        returnToHomePage();
+        selectContact(contact);
+        selectGroup(group);
+        submitAddContactInGroup();
+    }
 
-    private void selectGroup(GroupData group) {
-        new Select(manager.driver.findElement(By.name("new_group"))).selectByValue(group.id());
+    private void submitAddContactInGroup() {
+        click(By.name("add"));
     }
 
     public void removeContact(ContactData contact) {
@@ -61,8 +66,25 @@ public class ContactHelper extends addressbook.manager.HelperBase {
         selectContact(contact);
         removeSelectedContact();
         returnToHomePage();
-
     }
+    public void removeContact(ContactData contact, GroupData group) {
+        returnToHomePage();
+        selectGroupFromHomePage(group);
+        selectContact(contact);
+        removeSelectedContactInGroup();
+        returnToHomePage();
+    }
+
+    private void selectGroupFromHomePage(GroupData group) {
+        new Select(manager.driver.findElement(By.name("group"))).selectByValue(group.id());
+    }
+
+
+    private void selectGroup(GroupData group) {
+        new Select(manager.driver.findElement(By.name("new_group"))).selectByValue(group.id());
+    }
+
+
 
     public void modifyContact(ContactData contact ,ContactData modifiedContact) {
         returnToHomePage();
@@ -104,6 +126,10 @@ public class ContactHelper extends addressbook.manager.HelperBase {
     private void removeSelectedContact() {
         click(By.xpath("//input[@type='button'][@value='Delete']"));
         manager.driver.switchTo().alert().accept();
+    }
+
+    private void removeSelectedContactInGroup(){
+        click(By.name("remove"));
     }
 
     public int getCount() {

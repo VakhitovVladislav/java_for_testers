@@ -29,7 +29,7 @@ public class HibernateHelper extends HelperBase {
 
     }
 
-    static List<GroupData> convertList(List<GroupRecord> records) {
+    static List<GroupData> convertGroupList(List<GroupRecord> records) {
         List<GroupData> result = new ArrayList<>();
         for (var record : records) {
             result.add(convert(record));
@@ -50,11 +50,13 @@ public class HibernateHelper extends HelperBase {
     }
 
     public List<GroupData> getGroupList() {
-        return convertList(sessionFactory.fromSession(session -> {
+        return convertGroupList(sessionFactory.fromSession(session -> {
             return session.createQuery("from GroupRecord", GroupRecord.class).list();
         }));
 
     }
+
+
 
     public long getGroupCount() {
         return sessionFactory.fromSession(session -> {
@@ -76,7 +78,61 @@ public class HibernateHelper extends HelperBase {
         });
     }
 
-    private List<ContactData> convertContactList(List<ContactRecord> contacts) {
-        return null;
+    private List<ContactData> convertContactList(List<ContactRecord> records) {
+        List<ContactData> result = new ArrayList<>();
+        for (var record : records){
+            result.add(convertContact(record));
+        }
+        return result;
+    }
+    public List<ContactData> getContactList() {
+        return convertContactList(sessionFactory.fromSession(session -> {
+            return session.createQuery("from ContactRecord", ContactRecord.class).list();
+        }));
+    }
+
+    private ContactData convertContact(ContactRecord record) {
+        return new ContactData().withId("" + record.id)
+                .withName(record.first_name)
+                .withLastName(record.last_name)
+                .withNickName(record.nick_name)
+                .withTitle(record.title)
+                .withCompany(record.company)
+                .withAddress(record.address)
+                .withHomePhone(record.home_phone)
+                .withMobilePhone(record.mobile_phone)
+                .withFaxPhone(record.fax_phone)
+                .withEmail(record.email)
+                .withEmail2(record.email2)
+                .withEmail3(record.email3)
+                .withHomePage(record.homepage)
+                .withHAddressSecondary(record.address_secondary)
+                .withHome(record.home)
+                .withNotes(record.notes);
+    }
+
+    private ContactRecord convertContact(ContactData data) {
+        var id = data.id();
+        if("".equals(id)){
+            id = "0";
+        }
+        return new ContactRecord(Integer.parseInt(id), data.first_name(), data.middle_name(), data.last_name(),
+                data.nick_name(), data.title(),
+                data.company(), data.address(), data.home_phone(), data.mobile_phone(),
+                data.work_phone(), data.fax_phone(), data.email(), data.email2(), data.email3(),
+                data.homepage(), data.address_secondary(), data.home(), data.notes());
+    }
+    public long getContactCount() {
+        return  (sessionFactory.fromSession(session -> {
+            return session.createQuery("select count(*) from ContactRecord", Long.class).getSingleResult();
+        }));
+
+    }
+    public void createContact(ContactData contactData) {
+        sessionFactory.inSession(session -> {
+            session.getTransaction().begin();
+            session.persist(convertContact(contactData));
+            session.getTransaction().commit();
+        });
     }
 }

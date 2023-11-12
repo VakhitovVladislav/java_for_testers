@@ -16,11 +16,8 @@ public class HelperBase {
     }
 
     protected void attach(By locator, String file) {
-        if(Paths.get(file).toAbsolutePath()!= null){
         manager.driver.findElement(locator).sendKeys(Paths.get(file).toAbsolutePath().toString());
-    } else{
-            throw new IllegalArgumentException("get file path for attach method");
-        }
+
     }
 
     protected void type(By locator, String text) {

@@ -12,18 +12,18 @@ import java.util.Random;
 public class ContactModificationTests extends TestBase {
     @Test
     void canModifyContact(){
-        if (app.contacts().getCount() == 0) {
-            app.contacts().createContact(new ContactData("",
+        if (app.hbm().getContactCount() == 0) {
+            app.hbm().createContact(new ContactData("",
                     "firstname", "middlename", "lastname", "nickname", "title",
                     "company", "address", "home", "mobile", "work", "fax", "email",
                     "email2", "email3", "homepage", "address2", "phone2", "notes"));
         }
-        var oldContacts = app.contacts().getList();
+        var oldContacts = app.hbm().getContactList();
         var rnd = new Random();
         var index = rnd.nextInt(oldContacts.size());
         var testData = new ContactData().withName("modifyName");
         app.contacts().modifyContact(oldContacts.get(index), testData);
-        var newContacts = app.contacts().getList();
+        var newContacts = app.hbm().getContactList();
         var expectedList = new ArrayList<>(oldContacts);
         expectedList.set(index, testData.withId(oldContacts.get(index).id()));
         newContacts.sort(compareById());
