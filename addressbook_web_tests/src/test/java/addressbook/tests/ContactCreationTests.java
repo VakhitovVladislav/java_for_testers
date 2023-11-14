@@ -6,6 +6,7 @@ import addressbook.model.GroupData;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
@@ -14,6 +15,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Random;
 
 public class ContactCreationTests extends TestBase {
 
@@ -146,6 +148,35 @@ public class ContactCreationTests extends TestBase {
         oldRelated.sort(compareById);
         Assertions.assertEquals(expectedList, newRelated);
     }
+    @Test
+    public void canAddContactInGroup(){
+        if (app.hbm().getGroupCount() == 0) {
+        app.hbm().createGroup(new GroupData("", "group name", "group header", "group footer"));
+    }
+        if(app.hbm().getContactCount() == 0){
+        app.hbm().createContact(new ContactData("",
+                "firstname", "middlename", "lastname", "nickname", "title",
+                "company", "address", "home", "mobile", "work", "fax", "email",
+                "email2", "email3", "homepage", "address2", "phone2", "notes"));
+    }
+        Comparator<ContactData> compareById = (o1, o2) -> {
+            return Integer.compare(Integer.parseInt(o1.id()), Integer.parseInt(o2.id()));
+        };
+
+        var rnd = new Random();
+        var indexGroup = rnd.nextInt(app.hbm().getGroupList().size());
+        var indexContact = rnd.nextInt(app.hbm().getContactList().size());
+        var oldRelated = app.hbm().getContactsInGroup(app.hbm().getGroupList().get(indexGroup));
+        app.contacts().addContactInGroup(app.hbm().getContactList().get(indexContact), app.hbm().getGroupList().get(indexGroup));
+        var newRelated = app.hbm().getContactsInGroup(app.hbm().getGroupList().get(indexGroup));
+        var expectedList = new ArrayList<>(oldRelated);
+        expectedList.add(app.hbm().getContactList().get(indexContact));
+        expectedList.sort(compareById);
+        newRelated.sort(compareById);
+        Assertions.assertEquals(expectedList, newRelated);
+
+    }
+
 
     @ParameterizedTest
     @MethodSource("negativeContactProvider")

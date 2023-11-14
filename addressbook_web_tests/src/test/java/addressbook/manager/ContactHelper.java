@@ -81,7 +81,7 @@ public class ContactHelper extends addressbook.manager.HelperBase {
 
 
     private void selectGroup(GroupData group) {
-        new Select(manager.driver.findElement(By.name("new_group"))).selectByValue(group.id());
+        new Select(manager.driver.findElement(By.name("to_group"))).selectByValue(group.id());
     }
 
 

@@ -12,7 +12,9 @@ import com.fasterxml.jackson.dataformat.yaml.YAMLMapper;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.function.Supplier;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Generator {
     @Parameter(names = {"--type", "-t"})
@@ -52,25 +54,20 @@ public class Generator {
     }
 
     private Object generateContacts() {
-        var result = new ArrayList<ContactData>();
-        for (int i = 0; i < count; i++) {
-            result.add(new ContactData()
-                    .withName(CommonFunctions.randomSting(i * 10))
-                    .withLastName(CommonFunctions.randomSting(i * 10))
-                    .withMiddleName(CommonFunctions.randomSting(i * 10)));
-        }
-        return result;
+        return generateData(()-> new ContactData()
+                .withName(CommonFunctions.randomSting(10))
+                .withLastName(CommonFunctions.randomSting(10))
+                .withMiddleName(CommonFunctions.randomSting(10)));
+    }
+    private Object generateData(Supplier<Object> dataSupplier){
+        return Stream.generate(dataSupplier).limit(count).collect(Collectors.toList());
     }
 
     private Object generateGroups() {
-        var result = new ArrayList<GroupData>();
-        for (int i = 0; i < count; i++) {
-            result.add(new GroupData()
-                    .withName(CommonFunctions.randomSting(i * 10))
-                    .withHeader(CommonFunctions.randomSting(i * 10))
-                    .withFooter(CommonFunctions.randomSting(i * 10)));
-        }
-        return result;
+        return generateData(() -> new GroupData()
+                .withName(CommonFunctions.randomSting(10))
+                .withHeader(CommonFunctions.randomSting(10))
+                .withFooter(CommonFunctions.randomSting(10)));
     }
 
 
