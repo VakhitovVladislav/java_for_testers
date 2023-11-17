@@ -12,10 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class ContactCreationTests extends TestBase {
 
@@ -61,8 +58,8 @@ public class ContactCreationTests extends TestBase {
                 new ContactData().withHome("home'"),
                 new ContactData().withNotes("notes'")*/));
     }
-    public static List<ContactData> provider() {
-        return new ArrayList<ContactData>(List.of(
+    public static List<ContactData> provider() throws IOException {
+        return   new ArrayList<ContactData>(List.of(
                 new ContactData().withName("firtsName"),
                 new ContactData().withMiddleName("middle_name"),
                 new ContactData().withLastName("last_name"),
@@ -75,12 +72,13 @@ public class ContactCreationTests extends TestBase {
                 new ContactData().withWorkPhone("work_phone"),
                 new ContactData().withFaxPhone("fax_phone"),
                 new ContactData().withEmail("email"),
-                new ContactData().withEmail("email2"),
+                new ContactData().withEmail2("email2"),
                 new ContactData().withEmail3("email3"),
                 new ContactData().withHomePage("homepage"),
                 new ContactData().withHAddressSecondary("address_secondary"),
                 new ContactData().withHome("home"),
                 new ContactData().withNotes("notes")));
+
     }
 
     public static List<ContactData> singleRandomContact() throws IOException {
@@ -89,7 +87,21 @@ public class ContactCreationTests extends TestBase {
                 .withLastName(CommonFunctions.randomSting(20))
                 .withMiddleName(CommonFunctions.randomSting(30))
                 .withTitle(CommonFunctions.randomSting(40))
-        );
+                .withNickName(CommonFunctions.randomSting(10))
+                .withTitle(CommonFunctions.randomSting(10))
+                .withCompany(CommonFunctions.randomSting(10))
+                .withAddress(CommonFunctions.randomSting(10))
+                .withHomePage(CommonFunctions.randomSting(10))
+                .withMobilePhone(CommonFunctions.randomSting(10))
+                .withWorkPhone(CommonFunctions.randomSting(10))
+                .withFaxPhone(CommonFunctions.randomSting(10))
+                .withEmail(CommonFunctions.randomSting(10))
+                .withEmail2(CommonFunctions.randomSting(10))
+                .withEmail3(CommonFunctions.randomSting(10))
+                .withHomePage(CommonFunctions.randomSting(10))
+                .withHAddressSecondary(CommonFunctions.randomSting(10))
+                .withHome(CommonFunctions.randomSting(10))
+                .withNotes(CommonFunctions.randomSting(10)));
 
     }
 
@@ -131,6 +143,7 @@ public class ContactCreationTests extends TestBase {
                 .withName(newRelated.get(newRelated.size()-1).first_name())
                 .withLastName(newRelated.get(newRelated.size()-1).last_name())
                 .withMiddleName(newRelated.get(newRelated.size()-1).middle_name())
+                .withNickName(newRelated.get(newRelated.size()-1).nick_name())
                 .withTitle(newRelated.get(newRelated.size()-1).title())
                 .withCompany(newRelated.get(newRelated.size()-1).company())
                 .withAddress(newRelated.get(newRelated.size()-1).address())
@@ -142,7 +155,7 @@ public class ContactCreationTests extends TestBase {
                 .withEmail3(newRelated.get(newRelated.size()-1).email3())
                 .withHomePage(newRelated.get(newRelated.size()-1).homepage())
                 .withHAddressSecondary(newRelated.get(newRelated.size()-1).address_secondary())
-                .withHome(newRelated.get(newRelated.size()-1).home())
+                .withHome(newRelated.get(newRelated.size()-1).secondary_phone())
                 .withNotes(newRelated.get(newRelated.size()-1).notes()));
         expectedList.sort(compareById);
         oldRelated.sort(compareById);
@@ -173,7 +186,7 @@ public class ContactCreationTests extends TestBase {
         expectedList.add(app.hbm().getContactList().get(indexContact));
         expectedList.sort(compareById);
         newRelated.sort(compareById);
-        Assertions.assertEquals(expectedList, newRelated);
+        Assertions.assertEquals(Set.copyOf(newRelated), Set.copyOf(expectedList));
 
     }
 

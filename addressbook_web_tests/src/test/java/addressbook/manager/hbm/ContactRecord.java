@@ -27,11 +27,11 @@ public class ContactRecord {
 
     @Column(name = "nickname")
     public String nick_name;
-    @Column
+    @Column(name = "title")
     public String title;
-    @Column
+    @Column(name = "company")
     public String company;
-    @Column
+    @Column(name = "address")
     public String address;
 
     @Column(name = "home")
@@ -45,22 +45,23 @@ public class ContactRecord {
 
     @Column(name = "fax")
     public String fax_phone;
-    @Column
+    @Column(name = "email")
     public String email;
-    @Column
+    @Column(name = "email2")
     public String email2;
-    @Column
+    @Column(name = "email3")
     public String email3;
-    @Column
+    @Column(name = "homepage")
     public String homepage;
 
     @Column(name = "address2")
     public String address_secondary;
     @Column(name = "phone2")
-    public String home;
-    @Column
+    public String secondary_phone;
+    @Column(name = "notes")
     public String notes;
 
+    @Column(name = "deprecated")
     public Date deprecated = new Date();
     public ContactRecord() {
     }
@@ -68,7 +69,7 @@ public class ContactRecord {
     public ContactRecord(int id, String first_name, String middle_name, String last_name, String nick_name,
                          String title, String company, String address, String home_phone, String mobile_phone,
                          String work_phone, String fax_phone, String email, String email2, String email3,
-                         String homepage, String address_secondary, String home, String notes) {
+                         String homepage, String address_secondary, String secondary_phone, String notes) {
         this.id = id;
         this.first_name = first_name;
         this.middle_name = middle_name;
@@ -86,7 +87,7 @@ public class ContactRecord {
         this.email3 = email3;
         this.homepage = homepage;
         this.address_secondary = address_secondary;
-        this.home = home;
+        this.secondary_phone = secondary_phone;
         this.notes = notes;
     }
 }

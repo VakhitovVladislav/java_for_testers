@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Set;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
@@ -44,7 +45,7 @@ public class GroupCreationTests extends TestBase {
     }
 
     public static List<GroupData> negativeGroupProvider() {
-        return new ArrayList<GroupData>(List.of(
+        return new ArrayList<>(List.of(
                 new GroupData("", "Group Name'", "", "")));
     }
 
@@ -54,12 +55,11 @@ public class GroupCreationTests extends TestBase {
         var oldGroups = app.hbm().getGroupList();
         app.groups().createGroup(group);
         var newGroups = app.hbm().getGroupList();
+        var extraGroups = newGroups.stream().filter(g -> ! oldGroups.contains(g)).toList();
+        var newId = extraGroups.get(0).id();
         var expectedGroups = new ArrayList<>(oldGroups);
-        newGroups.sort(compareById());
-        var maxId = newGroups.get(newGroups.size() - 1).id();
-        expectedGroups.add(group.withId(maxId));
-        expectedGroups.sort(compareById());
-        Assertions.assertEquals(newGroups, expectedGroups);
+        expectedGroups.add(group.withId(newId));
+        Assertions.assertEquals(Set.copyOf(newGroups), Set.copyOf(expectedGroups));
     }
 
     @ParameterizedTest

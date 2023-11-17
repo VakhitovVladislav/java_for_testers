@@ -57,7 +57,22 @@ public class Generator {
         return generateData(()-> new ContactData()
                 .withName(CommonFunctions.randomSting(10))
                 .withLastName(CommonFunctions.randomSting(10))
-                .withMiddleName(CommonFunctions.randomSting(10)));
+                .withMiddleName(CommonFunctions.randomSting(10))
+                .withNickName(CommonFunctions.randomSting(10))
+                .withTitle(CommonFunctions.randomSting(10))
+                .withCompany(CommonFunctions.randomSting(10))
+                .withAddress(CommonFunctions.randomSting(10))
+                .withHomePage(CommonFunctions.randomSting(10))
+                .withMobilePhone(CommonFunctions.randomSting(10))
+                .withWorkPhone(CommonFunctions.randomSting(10))
+                .withFaxPhone(CommonFunctions.randomSting(10))
+                .withEmail(CommonFunctions.randomSting(10))
+                .withEmail2(CommonFunctions.randomSting(10))
+                .withEmail3(CommonFunctions.randomSting(10))
+                .withHomePage(CommonFunctions.randomSting(10))
+                .withHAddressSecondary(CommonFunctions.randomSting(10))
+                .withHome(CommonFunctions.randomSting(10))
+                .withNotes(CommonFunctions.randomSting(10)));
     }
     private Object generateData(Supplier<Object> dataSupplier){
         return Stream.generate(dataSupplier).limit(count).collect(Collectors.toList());

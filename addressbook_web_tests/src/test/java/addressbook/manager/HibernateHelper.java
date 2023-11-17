@@ -101,26 +101,27 @@ public class HibernateHelper extends HelperBase {
                 .withAddress(record.address)
                 .withHomePhone(record.home_phone)
                 .withMobilePhone(record.mobile_phone)
+                .withWorkPhone(record.work_phone)
                 .withFaxPhone(record.fax_phone)
                 .withEmail(record.email)
                 .withEmail2(record.email2)
                 .withEmail3(record.email3)
                 .withHomePage(record.homepage)
                 .withHAddressSecondary(record.address_secondary)
-                .withHome(record.home)
+                .withHome(record.secondary_phone)
                 .withNotes(record.notes);
     }
 
     private ContactRecord convertContact(ContactData data) {
         var id = data.id();
-        if("".equals(id)){
+        if("".equals(id) || id == null){
             id = "0";
         }
         return new ContactRecord(Integer.parseInt(id), data.first_name(), data.middle_name(), data.last_name(),
                 data.nick_name(), data.title(),
                 data.company(), data.address(), data.home_phone(), data.mobile_phone(),
                 data.work_phone(), data.fax_phone(), data.email(), data.email2(), data.email3(),
-                data.homepage(), data.address_secondary(), data.home(), data.notes());
+                data.homepage(), data.address_secondary(), data.secondary_phone(), data.notes());
     }
     public long getContactCount() {
         return  (sessionFactory.fromSession(session -> {

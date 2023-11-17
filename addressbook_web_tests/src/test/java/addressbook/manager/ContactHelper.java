@@ -3,10 +3,13 @@ package addressbook.manager;
 import addressbook.model.ContactData;
 import addressbook.model.GroupData;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class ContactHelper extends addressbook.manager.HelperBase {
 
@@ -32,7 +35,7 @@ public class ContactHelper extends addressbook.manager.HelperBase {
         type(By.name("email3"), contact.email3());
         type(By.name("homepage"), contact.homepage());
         type(By.name("address2"), contact.address_secondary());
-        type(By.name("phone2"), contact.home());
+        type(By.name("phone2"), contact.secondary_phone());
         type(By.name("notes"), contact.notes());
 
     }
@@ -53,7 +56,7 @@ public class ContactHelper extends addressbook.manager.HelperBase {
     public void addContactInGroup(ContactData contact, GroupData group) {
         returnToHomePage();
         selectContact(contact);
-        selectGroup(group);
+        selectGroupForAddToGroup(group);
         submitAddContactInGroup();
     }
 
@@ -81,9 +84,12 @@ public class ContactHelper extends addressbook.manager.HelperBase {
 
 
     private void selectGroup(GroupData group) {
-        new Select(manager.driver.findElement(By.name("to_group"))).selectByValue(group.id());
+        new Select(manager.driver.findElement(By.name("new_group"))).selectByValue(group.id());
     }
 
+    private void selectGroupForAddToGroup(GroupData group) {
+        new Select(manager.driver.findElement(By.name("to_group"))).selectByValue(group.id());
+    }
 
 
     public void modifyContact(ContactData contact ,ContactData modifiedContact) {
@@ -165,5 +171,44 @@ public class ContactHelper extends addressbook.manager.HelperBase {
                     .withLastName(last_name));
         }
         return contacts;
+    }
+
+    public String getPhones(ContactData contact) {
+        return manager.driver.findElement(By.xpath(
+                String.format("//input[@id='%s']/../../td[6]", contact.id())
+        )).getText();
+    }
+
+    public Map<String, String> getPhones() {
+        var result = new HashMap<String, String>();
+        List<WebElement> rows = manager.driver.findElements(By.name("entry"));
+        for (WebElement row: rows){
+            var id = row.findElement(By.tagName("input")).getAttribute("id");
+            var phones = row.findElements(By.tagName("td")).get(5).getText();
+            result.put(id, phones);
+    }
+        return result;
+    }
+
+    public Map<String, String> getEmails() {
+        var result = new HashMap<String, String>();
+        List<WebElement> rows = manager.driver.findElements(By.name("entry"));
+        for (WebElement row: rows){
+            var id = row.findElement(By.tagName("input")).getAttribute("id");
+            var emails = row.findElements(By.tagName("td")).get(4).getText();
+            result.put(id, emails);
+        }
+        return result;
+    }
+
+    public Map<String, String> getAddresses() {
+        var result = new HashMap<String, String>();
+        List<WebElement> rows = manager.driver.findElements(By.name("entry"));
+        for (WebElement row: rows){
+            var id = row.findElement(By.tagName("input")).getAttribute("id");
+            var addresses = row.findElements(By.tagName("td")).get(3).getText();
+            result.put(id, addresses);
+        }
+        return result;
     }
 }
