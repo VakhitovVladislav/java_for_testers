@@ -1,12 +1,10 @@
 package addressbook.manager.hbm;
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "addressbook")
@@ -63,6 +61,42 @@ public class ContactRecord {
 
     @Column(name = "deprecated")
     public Date deprecated = new Date();
+
+    @Column(name = "im")
+    public String im;
+
+    @Column(name = "im2")
+    public String im2;
+
+    @Column(name = "im3")
+    public String im3;
+
+    @Column(name = "bday")
+    public String bday;
+
+    @Column(name = "bmonth")
+    public String bmonth;
+
+    @Column(name = "byear")
+    public String byear;
+
+    @Column(name = "aday")
+    public String aday;
+
+    @Column(name = "amonth")
+    public String amonth;
+
+    @Column(name = "ayear")
+    public String ayear;
+
+    @ManyToMany
+    @JoinTable(name = "address_in_groups",
+            joinColumns = @JoinColumn(name = "id"),
+            inverseJoinColumns = @JoinColumn(name = "group_id"))
+    public List<ContactRecord> groups;
+
+
+
     public ContactRecord() {
     }
 

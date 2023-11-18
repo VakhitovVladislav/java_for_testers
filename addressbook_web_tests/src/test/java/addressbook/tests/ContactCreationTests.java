@@ -175,18 +175,22 @@ public class ContactCreationTests extends TestBase {
         Comparator<ContactData> compareById = (o1, o2) -> {
             return Integer.compare(Integer.parseInt(o1.id()), Integer.parseInt(o2.id()));
         };
-
         var rnd = new Random();
-        var indexGroup = rnd.nextInt(app.hbm().getGroupList().size());
-        var indexContact = rnd.nextInt(app.hbm().getContactList().size());
-        var oldRelated = app.hbm().getContactsInGroup(app.hbm().getGroupList().get(indexGroup));
-        app.contacts().addContactInGroup(app.hbm().getContactList().get(indexContact), app.hbm().getGroupList().get(indexGroup));
-        var newRelated = app.hbm().getContactsInGroup(app.hbm().getGroupList().get(indexGroup));
+        var group = app.hbm().getGroupList().get(rnd.nextInt(app.hbm().getGroupList().size()));
+        var contacts = app.hbm().getContactsNotInGroup(group);
+        if (contacts.size() == 0){
+            app.hbm().createContact(new ContactData("",
+                    "firstname", "middlename", "lastname", "nickname", "title",
+                    "company", "address", "home", "mobile", "work", "fax", "email",
+                    "email2", "email3", "homepage", "address2", "phone2", "notes"));
+        }
+        var contact = app.hbm().getContactsNotInGroup(group).get(rnd.nextInt(app.hbm().getContactsNotInGroup(group).size()));
+        var oldRelated = app.hbm().getContactsInGroup(group);
+        app.contacts().addContactInGroup(contact,group);
+        var newRelated = app.hbm().getContactsInGroup(group);
         var expectedList = new ArrayList<>(oldRelated);
-        expectedList.add(app.hbm().getContactList().get(indexContact));
-        expectedList.sort(compareById);
-        newRelated.sort(compareById);
-        Assertions.assertEquals(Set.copyOf(newRelated), Set.copyOf(expectedList));
+        expectedList.add(contact);
+        Assertions.assertEquals(newRelated, expectedList);
 
     }
 

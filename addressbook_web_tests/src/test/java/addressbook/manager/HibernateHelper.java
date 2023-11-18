@@ -10,6 +10,7 @@ import org.hibernate.cfg.Configuration;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class HibernateHelper extends HelperBase {
 
@@ -63,7 +64,6 @@ public class HibernateHelper extends HelperBase {
             return session.createQuery("select count (*) from GroupRecord", Long.class).getSingleResult();
         });
     }
-
     public void createGroup(GroupData groupData) {
         sessionFactory.inSession(session -> {
             session.getTransaction().begin();
@@ -110,6 +110,7 @@ public class HibernateHelper extends HelperBase {
                 .withHAddressSecondary(record.address_secondary)
                 .withHome(record.secondary_phone)
                 .withNotes(record.notes);
+
     }
 
     private ContactRecord convertContact(ContactData data) {
@@ -135,5 +136,15 @@ public class HibernateHelper extends HelperBase {
             session.persist(convertContact(contactData));
             session.getTransaction().commit();
         });
+    }
+
+    public List<ContactData> getContactsNotInGroup(GroupData group) {
+        var contactInGroup = getContactsInGroup(group);
+        var contactList = getContactList();
+        List<ContactData> result = contactList.stream()
+                .distinct()
+                .filter(c -> !contactInGroup.contains(c))
+                .collect(Collectors.toList());
+        return result;
     }
 }

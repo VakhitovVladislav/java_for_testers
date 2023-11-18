@@ -13,10 +13,10 @@ public class ContactRemovalTests extends TestBase {
     @Test
     public void canRemoveContact() {
         if (app.hbm().getContactCount() == 0) {
-            app.hbm().createContact(new ContactData(
+            app.hbm().createContact(new ContactData("",
                     "firstname", "middlename", "lastname", "nickname", "title",
                     "company", "address", "home", "mobile", "work", "fax", "email",
-                    "email2", "email3", "homepage", "address2", "phone2", "notes", ""));
+                    "email2", "email3", "homepage", "address2", "phone2", "notes", "aday"));
         }
         var oldContacts = app.hbm().getContactList();
         var rnd = new Random();
@@ -37,7 +37,7 @@ public class ContactRemovalTests extends TestBase {
             app.hbm().createContact(new ContactData("",
                     "firstname", "middlename", "lastname", "nickname", "title",
                     "company", "address", "home", "mobile", "work", "fax", "email",
-                    "email2", "email3", "homepage", "address2", "phone2", "notes"));
+                    "email2", "email3", "homepage", "address2", "phone2", "notes", "aday"));
         }
         var rnd = new Random();
         var indexForGroup = rnd.nextInt(app.hbm().getGroupList().size());
@@ -61,7 +61,7 @@ public class ContactRemovalTests extends TestBase {
             app.hbm().createContact(new ContactData("",
                     "firstname", "middlename", "lastname", "nickname", "title",
                     "company", "address", "home", "mobile", "work", "fax", "email",
-                    "email2", "email3", "homepage", "address2", "phone2", "notes"));
+                    "email2", "email3", "homepage", "address2", "phone2", "notes", "aday"));
         }
         app.contacts().removeAllContacts();
     }

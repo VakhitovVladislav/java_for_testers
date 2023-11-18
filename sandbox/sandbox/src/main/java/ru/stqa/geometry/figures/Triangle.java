@@ -1,6 +1,6 @@
 package ru.stqa.geometry.figures;
 
-import java.util.Objects;
+
 
 public record Triangle(double legOne, double legTwo, double hypotenuse) {
     @Override

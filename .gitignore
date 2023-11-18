@@ -2,3 +2,7 @@
 /sandbox/build
 /.gradle
 /addressbook_web_tests/src/test/resources/images
+/mantis_tests/build
+/mantis_tests/gradle
+/mantis_tests/build.gradle
+/mantis_tests/local.properties
