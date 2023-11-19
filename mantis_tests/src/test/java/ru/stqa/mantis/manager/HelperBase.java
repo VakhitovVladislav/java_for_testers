@@ -30,4 +30,8 @@ public class HelperBase {
     protected boolean isElementPresent(By locator){
         return manager.driver().findElements(locator).size() > 0;
     }
+
+    protected void runUrl(String url){
+        manager.driver().get(url);
+    }
 }

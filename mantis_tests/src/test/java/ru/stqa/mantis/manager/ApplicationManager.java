@@ -17,6 +17,8 @@ public class ApplicationManager {
     private JamesCliHelper jamesCliHelper;
     private MailHelper mailHelper;
 
+    private ClientHelper clientHelper;
+
     public void init(String browser, Properties properties) {
         this.browser = browser;
         this.properties = properties;
@@ -67,5 +69,11 @@ public class ApplicationManager {
             mailHelper = new MailHelper(this);
         }
         return mailHelper;
+    }
+    public ClientHelper client() {
+        if (clientHelper == null) {
+            clientHelper = new ClientHelper(this);
+        }
+        return clientHelper;
     }
 }

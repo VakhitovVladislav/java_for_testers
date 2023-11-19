@@ -74,11 +74,8 @@ public class MailHelper extends HelperBase {
             });
             inbox.close();
             inbox.getStore().close();
-
         } catch (MessagingException e) {
             throw new RuntimeException(e);
         }
-
-
     }
 }
