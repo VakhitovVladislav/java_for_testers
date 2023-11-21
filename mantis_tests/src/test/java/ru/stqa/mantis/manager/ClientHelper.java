@@ -8,16 +8,16 @@ public class ClientHelper extends HelperBase{
         super(manager);
     }
 
-    public void singupNewAccount(String username){
+    public void singupNewAccount(String username, String email){
         click(By.xpath("//a[@href='signup_page.php']"));
         type(By.name("username"), username);
-        type(By.name("email"), String.format("%s@localhost", username));
+        type(By.name("email"), email);
         click(By.xpath("//input[@type='submit']"));
         click(By.xpath("//a[@href='login_page.php']"));
     }
-    public void finishRegistration(String urlOfEmail){
+    public void finishRegistration(String urlOfEmail, String password){
         runUrl(urlOfEmail);
-        type(By.name("password"), "password");
+        type(By.name("password"), password);
         type(By.name("password_confirm"), "password");
     }
 }

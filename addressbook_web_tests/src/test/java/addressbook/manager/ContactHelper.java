@@ -187,6 +187,11 @@ public class ContactHelper extends addressbook.manager.HelperBase {
         }
         return result;
     }
+    public String getPhones(ContactData contact) {
+        return manager.driver.findElement(By.xpath(
+                String.format("//input[@id='%s']/../../td[6]", contact.id())
+        )).getText();
+    }
 
     public Map<String, String> getEmails() {
         var result = new HashMap<String, String>();
@@ -197,6 +202,11 @@ public class ContactHelper extends addressbook.manager.HelperBase {
             result.put(id, emails);
         }
         return result;
+    }
+    public String getEmails(ContactData contact) {
+        return manager.driver.findElement(By.xpath(
+                String.format("//input[@id='%s']/../../td[5]", contact.id())
+        )).getText();
     }
 
 
@@ -211,6 +221,11 @@ public class ContactHelper extends addressbook.manager.HelperBase {
         return result;
     }
 
+    public String getAddresses(ContactData contact) {
+        return manager.driver.findElement(By.xpath(
+                String.format("//input[@id='%s']/../../td[4]", contact.id())
+        )).getText();
+    }
 
     public String getAllInfoContact(ContactData contact) {
         var string = manager.driver.findElement(By.xpath(

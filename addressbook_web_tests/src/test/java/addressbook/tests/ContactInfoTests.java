@@ -20,6 +20,31 @@ public class ContactInfoTests extends TestBase{
         var phones = app.contacts().getPhones();
         Assertions.assertEquals(expected, phones);
     }
+
+    @Test
+    void canAssertContactInfoByParts(){
+        var rnd = new Random();
+        var contact = app.hbm().getContactList().get(rnd.nextInt(app.hbm().getContactList().size()));
+        var expectedPhones = Stream.of(contact.home_phone(), contact.mobile_phone(),contact.work_phone(),contact.secondary_phone())
+                        .filter(s -> s != null && !"".equals(s))
+                        .collect(Collectors.joining("\n"));
+        var phones = app.contacts().getPhones(contact);
+
+        var expectedEmails =
+                Stream.of(contact.email(), contact.email2(),contact.email3())
+                        .filter(s -> s != null && !"".equals(s))
+                        .collect(Collectors.joining("\n"));
+        var emails = app.contacts().getEmails(contact);
+
+        var expectedAddresses = Stream.of(contact.address())
+                .filter(s -> s != null && !"".equals(s))
+                .collect(Collectors.joining("\n"));
+        var addresses = app.contacts().getAddresses(contact);
+
+        Assertions.assertEquals(expectedPhones, phones);
+        Assertions.assertEquals(expectedEmails, emails);
+        Assertions.assertEquals(expectedAddresses, addresses);
+    }
     @Test
     void testAllInfo(){
         var rnd = new Random();
