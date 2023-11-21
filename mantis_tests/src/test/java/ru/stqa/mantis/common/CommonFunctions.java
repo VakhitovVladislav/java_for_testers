@@ -19,12 +19,16 @@ public class CommonFunctions {
     }
 
     public static String extractUrl(String text) {
-        var pattern = Pattern.compile("http://\\S*]");
+        var pattern = Pattern.compile("http://\\S*");
         var matcher = pattern.matcher(text);
+        String url;
         if (matcher.find()) {
-            return text.substring(matcher.start(), matcher.end());
-        }else {
+            url = text.substring(matcher.start(), matcher.end());
+            System.out.println(url);
+        } else {
             throw new RuntimeException("Can`t extract URL from mail");
         }
+        return url;
     }
 }
+

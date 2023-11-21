@@ -73,7 +73,6 @@ public class DeveloperMailHelper extends HelperBase {
                     if (!response2.success()) {
                         throw new RuntimeException(response2.errors().toString());
                     }
-
                     return new String(MimeUtility.decode(
                             new ByteArrayInputStream(response2.result().getBytes()),
                             "quoted-printable").readAllBytes());
@@ -87,10 +86,8 @@ public class DeveloperMailHelper extends HelperBase {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-
         throw new RuntimeException("No Mail");
     }
-
 
     String get(String url, String token) {
         Request request = new Request.Builder()

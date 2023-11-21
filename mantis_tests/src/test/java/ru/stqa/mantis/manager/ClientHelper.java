@@ -19,5 +19,6 @@ public class ClientHelper extends HelperBase{
         runUrl(urlOfEmail);
         type(By.name("password"), password);
         type(By.name("password_confirm"), "password");
+        click(By.xpath("//span[@class='bigger-110']"));
     }
 }

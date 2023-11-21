@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="317082f1-4f19-464b-9d0a-6bb1c7e522aa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/addressbook/manager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/addressbook/manager/ContactHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/addressbook/tests/ContactInfoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/addressbook/tests/ContactInfoTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
@@ -18,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis_tests/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis_tests/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis_tests/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis_tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis_tests/build/classes/java/test/ru/stqa/mantis/manager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/build/classes/java/test/ru/stqa/mantis/manager/ApplicationManager.class" afterDir="false" />
@@ -25,13 +23,16 @@
       <change beforePath="$PROJECT_DIR$/mantis_tests/build/reports/tests/test/packages/ru.stqa.mantis.tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/build/reports/tests/test/packages/ru.stqa.mantis.tests.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis_tests/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis_tests/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis_tests/build/test-results/test/binary/results.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis_tests/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis_tests/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/local.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/common/CommonFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/common/CommonFunctions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/manager/ApplicationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/manager/ClientHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/manager/ClientHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/tests/UserRegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/tests/UserRegistrationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/manager/DeveloperMailHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/manager/DeveloperMailHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/manager/developermail/GetIdsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/manager/developermail/GetIdsResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/tests/MailTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/tests/MailTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/tests/UserCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/tests/UserCreationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,21 +98,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;zulu-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Vlad/homework/java_for_testers/mantis_tests&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "zulu-17",
+    "last_opened_file_path": "C:/Users/Vlad/homework/java_for_testers/mantis_tests/src/test/java/io/swagger/client/api",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vlad\homework\java_for_testers\mantis_tests\src\test\java\io\swagger\client\api" />
+      <recent name="C:\Users\Vlad\homework\java_for_testers\mantis_tests\src\test\java" />
       <recent name="C:\Users\Vlad\homework\java_for_testers\mantis_tests" />
     </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
@@ -119,35 +122,13 @@
       <recent name="ApplicationManager" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.swagger.client.api" />
       <recent name="ru.stqa.mantis.manager" />
       <recent name="ru.stqa.mantis.common" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ContactInfoTests.canAssertContactInfoByParts">
-    <configuration name="ContactInfoTests.canAssertContactInfoByParts" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;addressbook.tests.ContactInfoTests.canAssertContactInfoByParts&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="UserCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.UserCreationTests.canCreateUserByApiMantis">
+    <configuration name="IssueCreationTests.canCreateIssue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_tests" />
@@ -160,7 +141,53 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stqa.mantis.tests.UserCreationTests&quot;" />
+            <option value="&quot;ru.stqa.mantis.tests.IssueCreationTests.canCreateIssue&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserCreationTests.canCreateUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.mantis.tests.UserCreationTests.canCreateUser&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserCreationTests.canCreateUserByApiMantis" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.mantis.tests.UserCreationTests.canCreateUserByApiMantis&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -184,29 +211,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;ru.stqa.mantis.tests.UserCreationTests.canCreateUserDevMail&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="UserRegistrationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stqa.mantis.tests.UserRegistrationTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -240,19 +244,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.ContactInfoTests.canAssertContactInfoByParts" />
-      <item itemvalue="Gradle.UserCreationTests" />
+      <item itemvalue="Gradle.UserCreationTests.canCreateUser" />
+      <item itemvalue="Gradle.UserCreationTests.canCreateUserByApiMantis" />
+      <item itemvalue="Gradle.IssueCreationTests.canCreateIssue" />
       <item itemvalue="Gradle.UserCreationTests.canCreateUserDevMail" />
-      <item itemvalue="Gradle.UserRegistrationTests" />
       <item itemvalue="Gradle.UserRegistrationTests.canRegisterUser" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ContactInfoTests.canAssertContactInfoByParts" />
+        <item itemvalue="Gradle.UserCreationTests.canCreateUserByApiMantis" />
+        <item itemvalue="Gradle.UserCreationTests.canCreateUser" />
         <item itemvalue="Gradle.UserRegistrationTests.canRegisterUser" />
-        <item itemvalue="Gradle.UserRegistrationTests" />
+        <item itemvalue="Gradle.IssueCreationTests.canCreateIssue" />
         <item itemvalue="Gradle.UserCreationTests.canCreateUserDevMail" />
-        <item itemvalue="Gradle.UserCreationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -293,23 +297,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/tests/UserCreationTests.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="33" />
+          <line>25</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/tests/UserCreationTests.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/manager/DeveloperMailHelper.java</url>
-          <line>95</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/tests/UserRegistrationTests.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="42" />
+          <line>58</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
