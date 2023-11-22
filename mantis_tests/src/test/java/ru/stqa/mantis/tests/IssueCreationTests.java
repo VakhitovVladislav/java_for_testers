@@ -8,7 +8,7 @@ public class IssueCreationTests extends TestBase{
 
     @Test
     void canCreateIssue(){
-        app.rest().createIssue(new IssueData()
+        app.soap().createIssue(new IssueData()
                 .withSummary(CommonFunctions.randomSting(10))
                 .withDescription(CommonFunctions.randomSting(20))
                 .withProject(1L));
