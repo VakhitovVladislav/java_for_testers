@@ -6,37 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="317082f1-4f19-464b-9d0a-6bb1c7e522aa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/addressbook/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/addressbook/manager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/addressbook/tests/ContactInfoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/addressbook/tests/ContactInfoTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/addressbook/tests/ContactModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/addressbook/tests/ContactModificationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/addressbook/tests/ContactRemovalTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/addressbook/tests/ContactRemovalTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/addressbook/tests/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/addressbook/tests/GroupCreationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/addressbook/tests/GroupModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/addressbook/tests/GroupModificationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/addressbook/tests/GroupRemovalTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/addressbook/tests/GroupRemovalTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/build/classes/java/test/ru/stqa/mantis/manager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/build/classes/java/test/ru/stqa/mantis/manager/ApplicationManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/build/reports/tests/test/packages/ru.stqa.mantis.tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/build/reports/tests/test/packages/ru.stqa.mantis.tests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/manager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/tests/IssueCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/tests/IssueCreationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +91,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;zulu-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Vlad/homework/java_for_testers/mantis_tests/src/test/java/io/swagger/client/api&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Vlad/homework/java_for_testers/addressbook_web_tests&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -117,6 +100,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vlad\homework\java_for_testers\addressbook_web_tests" />
       <recent name="C:\Users\Vlad\homework\java_for_testers\mantis_tests\src\test\java\io\swagger\client\api" />
       <recent name="C:\Users\Vlad\homework\java_for_testers\mantis_tests\src\test\java" />
       <recent name="C:\Users\Vlad\homework\java_for_testers\mantis_tests" />
@@ -293,11 +277,6 @@
           <url>file://$PROJECT_DIR$/addressbook_web_tests/src/test/java/addressbook/common/CommonFunctions.java</url>
           <line>11</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/addressbook_web_tests/src/test/java/addressbook/tests/ContactCreationTests.java</url>
-          <line>180</line>
-          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mantis_tests/src/test/java/ru/stqa/mantis/tests/UserCreationTests.java</url>

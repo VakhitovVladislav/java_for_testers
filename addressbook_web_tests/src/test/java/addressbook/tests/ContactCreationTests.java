@@ -5,6 +5,7 @@ import addressbook.model.ContactData;
 import addressbook.model.GroupData;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.qameta.allure.Allure;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -120,7 +121,9 @@ public class ContactCreationTests extends TestBase {
         expectedList.add(contact
                 .withId(maxId));
         expectedList.sort(compareById);
+        Allure.step("Validating result canCreateContact", step -> {
         Assertions.assertEquals(newContacts, expectedList);
+        });
 
     }
     @ParameterizedTest
@@ -159,10 +162,12 @@ public class ContactCreationTests extends TestBase {
                 .withNotes(newRelated.get(newRelated.size()-1).notes()));
         expectedList.sort(compareById);
         oldRelated.sort(compareById);
-        Assertions.assertEquals(expectedList, newRelated);
+        Allure.step("Validating result canCreateContact1", step -> {
+        Assertions.assertEquals(expectedList, newRelated);});
     }
     @Test
     public void canAddContactInGroup(){
+        Allure.step("Checking precodition canAddContactInGroup", step ->{
         if (app.hbm().getGroupCount() == 0) {
         app.hbm().createGroup(new GroupData("", "group name", "group header", "group footer"));
     }
@@ -171,7 +176,7 @@ public class ContactCreationTests extends TestBase {
                 "firstname", "middlename", "lastname", "nickname", "title",
                 "company", "address", "home", "mobile", "work", "fax", "email",
                 "email2", "email3", "homepage", "address2", "phone2", "notes"));
-    }
+    }});
         Comparator<ContactData> compareById = (o1, o2) -> {
             return Integer.compare(Integer.parseInt(o1.id()), Integer.parseInt(o2.id()));
         };
@@ -190,7 +195,8 @@ public class ContactCreationTests extends TestBase {
         var newRelated = app.hbm().getContactsInGroup(group);
         var expectedList = new ArrayList<>(oldRelated);
         expectedList.add(contact);
-        Assertions.assertEquals(newRelated, expectedList);
+        Allure.step("Validating result canAddContactInGroup", step -> {
+        Assertions.assertEquals(newRelated, expectedList);});
 
     }
 
@@ -201,6 +207,8 @@ public class ContactCreationTests extends TestBase {
         var oldContacts = app.contacts().getList();
         app.contacts().createContact(contact);
         var newContacts = app.contacts().getList();
+        Allure.step("Validating result canNotCreateContacts", step -> {
         Assertions.assertEquals(oldContacts, newContacts);
+        });
     }
 }

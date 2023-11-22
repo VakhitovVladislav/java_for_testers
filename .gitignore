@@ -6,3 +6,4 @@
 /mantis_tests/gradle
 /mantis_tests/build.gradle
 /mantis_tests/local.properties
+/mantis_tests/ci.properties

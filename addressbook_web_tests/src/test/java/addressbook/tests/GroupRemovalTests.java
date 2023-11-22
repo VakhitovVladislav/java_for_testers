@@ -11,7 +11,7 @@ import java.util.Random;
 public class GroupRemovalTests extends TestBase {
     @Test
     public void canRemoveGroup() {
-        Allure.step("Checking precodition", step ->{
+        Allure.step("Checking precodition RemovalTest", step ->{
             if (app.hbm().getGroupCount() == 0) {
                 app.hbm().createGroup(new GroupData("", "group name", "group header", "group footer"));
             }
@@ -23,16 +23,20 @@ public class GroupRemovalTests extends TestBase {
         var newGroups = app.hbm().getGroupList();
         var expectedList = new ArrayList<>(oldGroups);
         expectedList.remove(index);
-        Allure.step("Validating result", step -> {
+        Allure.step("Validating result RemovalTest", step -> {
             Assertions.assertEquals(newGroups, expectedList);
         });
     }
     @Test
-    public void canRemoveAllGroupsAtOnce(){
-        if (app.hbm().getGroupCount() == 0) {
-            app.hbm().createGroup(new GroupData("", "group name", "group header", "group footer"));
-        }
+    public void canRemoveAllGroupsAtOnce() {
+        Allure.step("Checking precodition RemovalAtOnceTest", step -> {
+            if (app.hbm().getGroupCount() == 0) {
+                app.hbm().createGroup(new GroupData("", "group name", "group header", "group footer"));
+            }
+        });
         app.groups().removeAllGroups();
-        Assertions.assertEquals(0, app.hbm().getGroupCount());
+        Allure.step("Validating result RemovalAtOnceTest", step -> {
+            Assertions.assertEquals(0, app.hbm().getGroupCount());
+        });
     }
 }

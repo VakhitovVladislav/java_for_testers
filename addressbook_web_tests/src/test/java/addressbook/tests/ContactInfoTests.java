@@ -1,6 +1,7 @@
 package addressbook.tests;
 
 import addressbook.model.ContactData;
+import io.qameta.allure.Allure;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -18,7 +19,9 @@ public class ContactInfoTests extends TestBase{
                 .filter(s -> s != null && !"".equals(s))
                 .collect(Collectors.joining("\n"))));
         var phones = app.contacts().getPhones();
+        Allure.step("Validating result testPhones", step -> {
         Assertions.assertEquals(expected, phones);
+        });
     }
 
     @Test
@@ -40,10 +43,10 @@ public class ContactInfoTests extends TestBase{
                 .filter(s -> s != null && !"".equals(s))
                 .collect(Collectors.joining("\n"));
         var addresses = app.contacts().getAddresses(contact);
-
+        Allure.step("Validating result canAssertContactInfoByParts", step -> {
         Assertions.assertEquals(expectedPhones, phones);
         Assertions.assertEquals(expectedEmails, emails);
-        Assertions.assertEquals(expectedAddresses, addresses);
+        Assertions.assertEquals(expectedAddresses, addresses);});
     }
     @Test
     void testAllInfo(){
@@ -54,7 +57,8 @@ public class ContactInfoTests extends TestBase{
                         .filter(s -> s != null && !"".equals(s))
                         .collect(Collectors.joining("\n"));
         var allInfo = app.contacts().getAllInfoContact(contact);
-        Assertions.assertEquals(expected, allInfo);
+        Allure.step("Validating result testAllInfo", step -> {
+        Assertions.assertEquals(expected, allInfo);});
     }
 
 }

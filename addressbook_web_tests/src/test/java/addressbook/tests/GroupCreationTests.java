@@ -4,6 +4,7 @@ import addressbook.common.CommonFunctions;
 import addressbook.model.GroupData;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.dataformat.yaml.YAMLMapper;
+import io.qameta.allure.Allure;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -59,7 +60,9 @@ public class GroupCreationTests extends TestBase {
         var newId = extraGroups.get(0).id();
         var expectedGroups = new ArrayList<>(oldGroups);
         expectedGroups.add(group.withId(newId));
+        Allure.step("Validating result canCreateGroup1", step -> {
         Assertions.assertEquals(Set.copyOf(newGroups), Set.copyOf(expectedGroups));
+        });
     }
 
     @ParameterizedTest
@@ -71,7 +74,9 @@ public class GroupCreationTests extends TestBase {
         var expectedGroups = new ArrayList<>(oldGroups);
         newGroups.sort(compareById());
         expectedGroups.sort(compareById());
+        Allure.step("Validating result canCreateGroup2", step -> {
         Assertions.assertEquals(newGroups, expectedGroups);
+        });
     }
     private Comparator<GroupData> compareById() {
         return (o1, o2) -> {
